@@ -1,0 +1,21 @@
+{
+  "name": "30/30",
+  "homepage": "https://github.com/nrator/30-30",
+  "authors": [
+    "Jason Leung <klleungjason@gmail.com>"
+  ],
+  "description": "Create 30 webpages in 30 days.",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.5"
+  }
+}
