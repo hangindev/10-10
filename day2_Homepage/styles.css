@@ -1,0 +1,89 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    color: #6c6f73;
+}
+
+/* cover */
+
+#cover {
+  background: url('img/hero.jpg') center center no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#cover-caption {
+  font-size: 1.4rem;
+  font-weight: 200;
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#cover-caption h1 {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+p.small {
+  font-size: 50%;
+  font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+p.small a {
+  color: white;
+  text-decoration: underline;
+}
+
+.feature-content {
+  height: 100%;
+  padding: 7rem 0;
+  overflow: hidden;
+}
+
+@media screen and ( min-width : 991px ) {
+  .feature-content {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.feature-dark {
+  background: #262F36;
+  color: white;
+}
+
+.feature-full img {
+  margin-bottom: -7rem;
+}
+
+#footer {
+    background: #262F36;
+    color: white;
+    padding: 4rem 0;
+    font-size: 0.8rem;
+}
+
+#footer h6 {
+    color: #718FA9;
+}
+
+#footer a {
+    color: #6C6F73;
+}
