@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" entry="IE=edge">
+  <title>Contact Form by Jason Leung</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <script src="https://use.fontawesome.com/711a8a98c0.js"></script>
+</head>
+
+<body>
+  <form class="contact-form" role="form" id="ContactForm">
+    <h2>Contact Us</h2>
+    <div class="input-group">
+      <label class="input-group-addon"><i class="fa fa-user fa-2x fa-fw"></i></label>
+      <input required="required" type="text" placeholder="Name">
+    </div>
+    <div class="input-group">
+      <label class="input-group-addon"><i class="fa fa-envelope fa-2x fa-fw"></i></label>
+      <input required="required" type="text" placeholder="Email">
+    </div>
+    <div class="input-group">
+      <label class="input-group-addon"><i class="fa fa-phone fa-2x fa-fw"></i></label>
+      <input type="text" placeholder="Number (Optional)">
+    </div>
+    <div class="input-group">
+      <label class="input-group-addon"><i class="fa fa-pencil fa-2x fa-fw"></i></label>
+      <textarea rows="1" required="required" type="text" placeholder="Message"></textarea>
+    </div>
+    <button type="submit" form="ContactForm" value="Submit" class="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>  Send</button>
+  </form>
+
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script>
+  $( "input" ).focus(function() {
+    $( this ).siblings().css("color", "#0c4c8a");
+  });
+  $( "textarea" ).focus(function() {
+    $( this ).siblings().css("color", "#0c4c8a");
+    $( this ).attr("rows", "3");
+  });
+  $( "input" ).blur(function() {
+    $( this ).siblings().css("color", "#aeaeae");
+  });
+  $( "textarea" ).blur(function() {
+    $( this ).siblings().css("color", "#aeaeae");
+  });
+  </script>
+
+</body>
+</html>
