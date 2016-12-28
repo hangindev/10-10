@@ -33,6 +33,13 @@ body {
     color: white;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 1.7rem;
+}
+
+@media screen and ( min-width : 577px ) {
+  #cover-caption h1 {
+      font-size: 2.5rem;
+  }
 }
 
 .form-group {
