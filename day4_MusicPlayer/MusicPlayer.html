@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" entry="IE=edge">
+  <title>Music Player by Jason Leung</title>
+  <meta name="description" entry="A music player built with HTML5, Bootstrap4 and jQuery." />
+  <meta name="keywords" entry="music player" />
+  <meta name="robots" entry="index,follow" />
+  <meta property="og:title" entry="Music Player by Jason Leung" />
+  <meta property="og:description" entry="A music player built with HTML5, Bootstrap4 and jQuery." />
+  <meta property="og:type" entry="website" />
+  <meta property="og:url" entry="" />
+  <meta property="og:image" entry="https://s24.postimg.org/hi658qj79/image.jpg" />
+  <meta property="og:image:type" entry="image/jpeg" />
+  <meta property="og:image:width" entry="1200" />
+  <meta property="og:image:height" entry="630" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/711a8a98c0.js"></script>
+
+</head>
+<body>
+  <div id="container">
+
+    <!-- Music Player
+    ============================================================ -->
+    <div id="musicplayer" class="card card-inverse text-xs-center">
+
+      <!-- Cover Photo
+      ============================================================ -->
+      <div class="cover">
+        <img id="cover" class="card-img-top img-fluid rounded" src="media/cover/The.madpix.project - Wish You Were Here.jpg">
+      </div>
+
+      <div class="card-block">
+
+        <!-- Title
+        ============================================================ -->
+        <h4 id="title" class="card-title">Wish You Were Here </h4>
+        <p id="artist" class="card-text">By <small class="text-muted">The.madpix.project </small></p>
+
+        <!-- Duration
+        ============================================================ -->
+        <progress id="progress" class="progress progress-info" value="0" max="100" ></progress>
+
+        <!-- Control
+        ============================================================ -->
+        <div class="btn-group">
+          <a id="prev" class="btn btn-default">
+            <i class="fa fa-step-backward fa-inverse" aria-hidden="true"></i>
+          </a>
+          <a id="play" class="btn btn-default">
+            <i class="fa fa-play fa-inverse" aria-hidden="true"></i>
+          </a>
+          <a id="pause" class="btn btn-default">
+            <i class="fa fa-pause fa-inverse" aria-hidden="true"></i>
+          </a>
+          <a id="stop" class="btn btn-default">
+            <i class="fa fa-stop fa-inverse" aria-hidden="true"></i>
+          </a>
+          <a id="next" class="btn btn-default">
+            <i class="fa fa-step-forward fa-inverse" aria-hidden="true"></i>
+          </a>
+        </div> <!-- End of control -->
+
+        <!-- playlist
+        ============================================================ -->
+        <div id="playlist">
+          <table class="table table-sm table-inverse">
+              <tr src="https://drive.google.com/uc?export=download&id=0ByLDdePsjVuGV2Q5QWIwUEx0VzA" cover="ThemadpixprojectWishYouWereHere.jpg" title="Wish You Were Here" artist="The.madpix.project">
+                <th scope="row">1</th>
+                <td class="song">Wish You Were Here - The.madpix.project</td>
+                <td class="duration">4:31</td>
+              </tr>
+              <tr src="https://drive.google.com/uc?export=download&id=0ByLDdePsjVuGTmZieEdCZEVnaTg" cover="EmeraldParkUme.jpg" title="Ume" artist="Emerald Park">
+                <th scope="row">2</th>
+                <td class="song">Ume - Emerald Park</td>
+                <td class="duration">3:57</td>
+              </tr>
+              <tr src="https://drive.google.com/uc?export=download&id=0ByLDdePsjVuGRjM0clR2TmdiTkk" cover="MyBubbaMiSatisfiedmind.jpg" title="Satisfied mind" artist="My Bubba & Mi">
+                <th scope="row">3</th>
+                <td class="song">Satisfied mind - My Bubba & Mi</td>
+                <td class="duration">3:40</td>
+              </tr>
+              <tr src="https://drive.google.com/uc?export=download&id=0ByLDdePsjVuGR1ZCeUQ1ZGlZZTA" cover="NocreepsRIP.jpg" title="R.I.P." artist="Nocreeps">
+                <th scope="row">4</th>
+                <td class="song">RIP - Nocreeps</td>
+                <td class="duration">5:52</td>
+              </tr>
+              <tr src="https://drive.google.com/uc?export=download&id=0ByLDdePsjVuGbHQxYUFzYmJfUHc" cover="BradSucksUnderstoodbyYourDad.jpg" title="Understood by Your Dad" artist="BradSucks">
+                <th scope="row">5</th>
+                <td class="song">Understood by Your Dad - BradSucks</td>
+                <td class="duration">2:51</td>
+              </tr>
+              <tr src="https://drive.google.com/uc?export=download&id=0ByLDdePsjVuGQWRmLXBNZ0Y2eWs" cover="ShearerSaymyName.jpg" title="Say my Name" artist="Shearer">
+                <th scope="row">6</th>
+                <td class="song">Say my Name - Shearer</td>
+                <td class="duration">3:23</td>
+              </tr>
+          </table> <!-- End of playlist -->
+        </div>
+      </div> <!-- End of card block -->
+    </div> <!-- End of musicplayer -->
+  </div> <!-- End of container -->
+
+  <!-- jQuery, Bootstrap, KnockOut -->
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type='text/javascript' src='js/knockout-3.4.1.js'></script>
+
+  <!-- Custom JS -->
+  <script src="main.js"></script>
+
+</body>
+</html>
