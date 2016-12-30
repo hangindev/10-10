@@ -1,0 +1,100 @@
+/* Browser mockup code
+ * Contribute: https://gist.github.com/jarthod/8719db9fef8deb937f4f
+ * Live example: https://updown.io
+ */
+
+.browser-mockup {
+  border-top: 2em solid #353f4a;
+  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+  position: relative;
+  border-radius: 3px 3px 0 0;
+  width: 1000px;
+  height: 562px;
+}
+
+.browser-mockup:before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: -1.25em;
+  left: 1em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #ce5656;
+  box-shadow: 0 0 0 2px #ce5656, 1.5em 0 0 2px #fedd80, 3em 0 0 2px #76db89;
+}
+
+.browser-mockup.with-url:after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: -1.6em;
+  left: 17em;
+  width: 50%;
+  height: 1.2em;
+  border-radius: 2px;
+  background-color: #5b6775;
+}
+
+.browser-mockup.with-url:after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: -1.6em;
+  left: 5.5em;
+  width: calc(100% - 6em);
+  height: 1.2em;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.browser-mockup > *,
+.iphone-mockup > * {
+  display: block;
+}
+
+.iphone-mockup {
+  border-top: 3.8em solid #353f4a;
+  border-bottom: 3.8em solid #353f4a;
+  border-right: 0.3em solid #353f4a;
+  border-left: 0.3em solid #353f4a;
+  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+  position: relative;
+  border-radius: 1.75em;
+  width: 20em;
+  height: 35.5em;
+}
+
+.iphone-mockup:before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: -2.2em;
+  left: calc(50% - 0.25em);
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.125em #20272f, 0 39.2em 0 0.75em #20272f, 0 39.2em 0 0.9375em #414f5e;
+}
+
+.iphone-mockup:after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: -1.3em;
+  left: calc(50% - 0.75em);
+  width: 1.5em;
+  height: 0.25em;
+  background-color: #20272f;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+iframe {
+    height: 568px;
+    width: 320px;
+}

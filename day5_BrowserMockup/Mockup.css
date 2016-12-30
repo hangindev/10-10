@@ -1,0 +1,223 @@
+body {
+  font-size: 16px;
+}
+
+img {
+  width: 100%;
+}
+
+/* laptop Mockup
+=============================================================*/
+.laptop-mockup > * {
+  display: block;
+}
+
+.laptop-mockup {
+  border-top: 2em solid #253035;
+  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+  position: relative;
+  border-radius: 0.1875em 0.1875em 0 0;
+  width: 45em;
+  height: 100%;
+}
+
+.laptop-mockup:before {
+  position: absolute;
+  content: '';
+  top: -1.25em;
+  left: 1em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #ce5656;
+  box-shadow: 0 0 0 0.11em #ce5656, 1.2em 0 0 0.11em #fedd80, 2.4em 0 0 0.11em #76db89;
+}
+
+.laptop-mockup:after {
+  position: absolute;
+  content: '';
+  top: -1.6em;
+  left: 13em;
+  width: 50%;
+  height: 1.2em;
+  border-radius: 2px;
+  background-color: #5b6775;
+}
+
+.laptop-mockup.2x {
+  font-size: 2rem;
+}
+
+.laptop-mockup.3x {
+  font-size: 3rem;
+}
+
+/* phone Mockup
+=============================================================*/
+.phone-mockup > * {
+  display: block;
+}
+
+.phone-mockup {
+  border-top: 0.95em solid #000;
+  border-bottom: 0.95em solid #000000;
+  border-right: 0.1em solid #262626;
+  border-left: 0.1em solid #262626;
+  box-shadow: 0 0.05em 0.5em 0 rgba(0, 0, 0, 0.4);
+  position: relative;
+  border-radius: 0.4375em;
+  width: 5em;
+  height: 8.875em;
+}
+
+.phone-mockup:before {
+  position: absolute;
+  content: '';
+  top: -0.55em;
+  left: calc(50% - 0.05em);
+  width: 0.1em;
+  height: 0.1em;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.03em #393939, 0 9.8em 0 0.1875em #000000, 0 9.8em 0 0.215em #3a3b41;
+}
+
+.phone-mockup:after {
+  position: absolute;
+  content: '';
+  top: -0.325em;
+  left: calc(50% - 0.3em);
+  width: 0.6em;
+  height: 0.06em;
+  background-color: #20272f;
+}
+
+.phone-mockup.2x {
+  font-size: 2rem;
+}
+
+.phone-mockup.3x {
+  font-size: 3rem;
+}
+
+/* tablet Mockup
+=============================================================*/
+.tablet-mockup > * {
+  display: block;
+}
+
+.tablet-mockup {
+  border-top: 1.8em solid #000000;
+  border-bottom: 1.8em solid #000000;
+  border-right: 0.7em solid #1c2228;
+  border-left: 0.7em solid #1c2228;
+  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+  position: relative;
+  border-radius: 0.6em;
+  width: 12em;
+  height: 16em;
+}
+
+.tablet-mockup:before {
+  position: absolute;
+  content: '';
+  top: -1.1em;
+  left: calc(50% - 0.125em);
+  width: 0.25em;
+  height: 0.25em;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.0625em #20272f, 0 17.88em 0 0.3em #1d2228, 0 17.88em 0 0.32em #414f5e;
+}
+
+.tablet-mockup:after {
+  position: absolute;
+  content: '';
+  top: 16.8em;
+  left: calc(50% - 0.11em);
+  width: 0.22em;
+  height: 0.2em;
+  box-shadow: 0 0 0 0.05em #666666;
+  border-radius: 20%;
+}
+
+.tablet-mockup.2x {
+  font-size: 2rem;
+}
+
+.tablet-mockup.3x {
+  font-size: 3rem;
+}
+
+/* Testing
+=============================================================*/
+.phone-mockup iframe {
+  height: 17.75em;
+  width: 10em;
+}
+
+/* For Presentation
+=============================================================*/
+body {
+  position: relative;
+  font-family: 'Caveat Brush', cursive;
+	background: url('img/tile.jpg') top left repeat;
+  color: #36252b;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4.5em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+
+@media screen and (max-width : 568px) {
+	h1 {
+		font-size: 2em;
+	}
+}
+
+.detail {
+  position: absolute;
+  top:0;
+}
+
+.wrapper {
+  /*perspective: 1000px;*/
+  margin: 0 auto;
+  left: calc(50% - 21.5em);
+  position: absolute;
+}
+
+.inner {
+  position: relative;
+}
+
+.laptop,
+.phone,
+.pad {
+  position: absolute;
+}
+
+.phone {
+  top: 18.5em;
+  left: 42em;
+  display: block;
+}
+
+.pad {
+  top: 12.5em;
+  left: -5em;
+}
+
+/* .wrapper:hover .inner {
+transform: rotate(0)
+}
+
+.inner {
+transition: .3s;
+-webkit-transform: rotateX(18deg) rotateY(0deg) rotateZ(-5deg);
+-moz-transform: rotateX(18deg) rotateY(0deg) rotateZ(-5deg);
+-o-transform: rotateX(18deg) rotateY(0deg) rotateZ(-5deg);
+-ms-transform: rotateX(18deg) rotateY(0deg) rotateZ(-5deg);
+transform: rotateX(18deg) rotateY(0deg) rotateZ(-5deg);
+}*/
