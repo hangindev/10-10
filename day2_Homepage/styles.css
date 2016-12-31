@@ -9,6 +9,9 @@ body {
     color: #6c6f73;
 }
 
+.img-fluid {
+  width:100%;
+}
 /* cover */
 
 #cover {
@@ -36,9 +39,16 @@ body {
     font-size: 1.7rem;
 }
 
+.youtube {
+  margin-bottom: 20px;
+}
+
 @media screen and ( min-width : 577px ) {
   #cover-caption h1 {
       font-size: 2.5rem;
+  }
+  .youtube {
+    margin-bottom: 0;
   }
 }
 
