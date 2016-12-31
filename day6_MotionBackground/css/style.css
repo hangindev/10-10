@@ -1,0 +1,67 @@
+/* GLOBAL
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+}
+
+#cover {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+video#bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(../img/funfair.png) no-repeat;
+  background-size: cover;
+}
+
+.cover-caption {
+  width: 100%;
+}
+
+.cover-caption p {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+@media screen and (min-width: 768px) {
+  .cover-caption p {
+    font-size: 60px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .cover-caption p {
+    font-size: 70px;
+  }
+}
+
+.cover-caption a {
+  padding: 15px;
+  border: 2.5px solid #ffffff;
+}
