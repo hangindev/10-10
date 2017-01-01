@@ -64,4 +64,32 @@ video#bgvid {
 .cover-caption a {
   padding: 15px;
   border: 2.5px solid #ffffff;
+  text-decoration: none;
+}
+
+.cover-caption a:link {
+  color: white;
+}
+
+.cover-caption a:hover {
+  color: black;
+}
+
+/* Fade */
+.hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+  background-color: white;
+  color: black;
+  font-weight: bold;
 }
