@@ -183,7 +183,7 @@ h1 {
 
 .wrapper {
   /*perspective: 1000px;*/
-  margin: 0 auto;
+  margin: 50px auto;
   left: calc(50% - 21.5em);
   position: absolute;
 }
