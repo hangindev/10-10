@@ -114,7 +114,17 @@ a.text-danger:hover {
 }
 
 #hero .hero-text {
-	margin-top: 30px;
+	margin-top: 9rem;
+	margin-bottom: 9rem;
+
+}
+
+@media
+(min-width: 768px) {
+	#hero .hero-text {
+	    margin-top: 30px;
+	    margin-bottom: 0;
+	}
 }
 
 #price-timeline {
@@ -189,7 +199,7 @@ section h3 {
 
 #signup {
 	text-align: center;
-	background: url('img/gym.jpg') 50% 0 repeat fixed;
+	background: url('img/gym.jpg') center center repeat fixed;
 	background-size: cover;
 	color: white;
 	padding: 100px 0;
