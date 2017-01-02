@@ -1,0 +1,31 @@
+body {
+  margin-left: 1.7rem;
+  font-family: Arial;
+}
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+.rating span.star {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    position: relative;
+    width: 1.1rem;
+}
+
+.rating span.star:before {
+    content: "\f006";
+    padding-right: 5px;
+    color: #777;
+}
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+  cursor: pointer;
+  content: "\f005";
+  color: #daff00;
+}
