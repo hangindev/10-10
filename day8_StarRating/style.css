@@ -1,30 +1,49 @@
 body {
-  margin-left: 1.7rem;
   font-family: Arial;
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.rating {
+.card {
+  width: 320px;
+  margin: 2rem auto;
+  border-radius: 3px;
+  position: relative;
+}
+
+.card img {
+  border-radius: 3px;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important;
+}
+
+.rateMe {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.rateMe p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.rateMe .rating {
   unicode-bidi: bidi-override;
   direction: rtl;
 }
 
-.rating span.star {
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    display: inline-block;
-    position: relative;
-    width: 1.1rem;
+.rateMe .rating span.star {
+  font-family: FontAwesome;
+  width: 1.1rem;
 }
 
-.rating span.star:before {
-    content: "\f006";
-    padding-right: 5px;
-    color: #777;
+.rateMe .rating span.star:before {
+  content: "\f006";
+  padding-right: 5px;
 }
 
-.rating > span:hover:before,
-.rating > span:hover ~ span:before {
+.rateMe .rating > span:hover:before,
+.rateMe .rating > span:hover ~ span:before {
   cursor: pointer;
   content: "\f005";
   color: #daff00;
