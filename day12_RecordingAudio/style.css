@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+#home,
+#speech,
+#progress,
+#profile {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 112px);
+}
+
+
+.brand-logo {
+  font-weight: 300;
+}
+
+.brand-logo strong {
+  font-weight: 700;
+}
+
+#sidenav-overlay {
+z-index: 1;
+}
+
+main {
+  flex: 1;
+}
+
+.recorder {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  z-index: 100;
+  padding-top: 22px;
+}
+
+.recorder a {
+  z-index: 100;
+}
+
+.recorder #flatline {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 51px;
+  border-top: 2px solid black;
+  z-index: 50;
+}
+
+#visualizer {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
