@@ -18,6 +18,7 @@
   "dependencies": {
     "bootstrap": "v4.0.0-alpha.5",
     "knockout": "^3.4.1",
-    "materialize": "^0.97.8"
+    "materialize": "^0.97.8",
+    "jquery.easy-pie-chart": "^2.1.6"
   }
 }

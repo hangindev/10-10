@@ -58,61 +58,146 @@
   ======================================================= -->
   <div id="home" class="col s12">
 
-  </div>
-
-  <!-- SPEECH SECTION
-  ======================================================= -->
-  <div id="speech" class="col s12">
     <header class="container">
-      <h5>Welcome back Jason!</h5>
+      <div class="row">
+        <div class="col s12">
+          <div class="card white">
+            <div class="card-content black-text">
+              <span class="card-title">Welcome back Jason!</span>
+              <p>“There are always three speeches, for every one you actually gave. The one you practiced, the one you gave, and the one you wish you gave.” – Dale Carnegie</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
+
     <main class="container">
-      <ul id="audioClips" class="collapsible" data-collapsible="accordion">
-        <li>
-          <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-          <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-          <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-          <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-        </li>
-      </ul>
-    </main>
+      <div class="row">
+        <div class="col s12 l6">
+          <div id="score" class="card white">
+            <div class="card-content black-text">
+              <p class="card-title">Your speech score</p>
+              <div class="chart" data-percent="86">
+                <span class="percent"></span>
+                <div class="label">Co-ordination</div>
+              </div>
+              <div class="chart" data-percent="75">
+                <span class="percent"></span>
+                <div class="label">Substance</div>
+              </div>
+              <div class="chart" data-percent="88">
+                <span class="percent"></span>
+                <div class="label">Emotion</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 l6">
+          <div id="reading" class="card teal">
+            <div class="card-content white-text">
+              <span class="card-title">Featured Article</span>
+              <p class="">
+                Speech Analytics, also known as audio mining, is a software that converts unstructured conversations, such as phone calls, into structured output. The conversations are structured using a variety of techniques and turned intometadata. Then, the output files can be analyzed and used by the enterprise. Most speech analytics solutions use recorded conversations for their input, but progress has been made recently in real-time analysis.
+              </p>
+              <a href="#"><small>continue reading...</small></a>
+            </div>
+          </div>
+        </main>
+      </div>
 
-    <footer class="recorder">
-      <div id="flatline"></div>
-      <a id="recButton" class="btn-floating btn-large waves-effect waves-light pink lighten-2"><i class="material-icons">mic</i></a>
-      <a id="stopButton" class="btn-floating btn-large waves-effect waves-light pink lighten-4"><i class="material-icons">stop</i></a>
-      <canvas id="visualizer"></canvas>
-    </footer>
-  </div>
+      <!-- SPEECH SECTION
+      ======================================================= -->
+      <div id="speech" class="col s12">
+        <header class="container">
+          <div class="row">
+            <div class="col s12">
+              <div class="card white">
+                <div class="card-image">
+                  <img src="https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAXXAAAAJDE0M2YwM2MwLTM2YTYtNDIwNy05ODUyLWRmNzFmOGM1YTEwYw.png">
+                  <span class="card-title black-text">Record a speech</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="container">
+          <ul id="audioClips" class="collapsible" data-collapsible="accordion">
+            <!-- <li>
+              <div class="collapsible-header">First</div>
+              <div class="collapsible-body">
+                <div class="chart" data-percent="86">
+                  <span class="percent"></span>
+                  <div class="label">Co-ordination</div>
+                </div>
+                <div class="chart" data-percent="75">
+                  <span class="percent"></span>
+                  <div class="label">Substance</div>
+                </div>
+                <div class="chart" data-percent="88">
+                  <span class="percent"></span>
+                  <div class="label">Emotion</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">Second</div>
+              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header">Third</div>
+              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+            </li> -->
+          </ul>
+        </main>
 
-  <!-- PROGRESS SECTION
-  ======================================================= -->
-  <div id="progress" class="col s12">
+        <footer class="recorder">
+          <div id="flatline"></div>
+          <a id="recButton" class="btn-floating btn-large waves-effect waves-light pink lighten-2"><i class="material-icons">mic</i></a>
+          <a id="stopButton" class="btn-floating btn-large waves-effect waves-light pink lighten-4"><i class="material-icons">stop</i></a>
+          <canvas id="visualizer"></canvas>
+        </footer>
+      </div>
 
-  </div>
+      <!-- PROGRESS SECTION
+      ======================================================= -->
+      <div id="progress" class="col s12">
 
-  <!-- PROFILE SECTION
-  ======================================================= -->
-  <div id="profile" class="col s12">
+      </div>
 
-  </div>
+      <!-- PROFILE SECTION
+      ======================================================= -->
+      <div id="profile" class="col s12">
 
-
-
-
+      </div>
 
 
-  <!-- jQuery , materialize js -->
-  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="../bower_components/materialize/dist/js/materialize.min.js"></script>
 
-  <!-- Custom js -->
-  <script src="app.js"></script>
-</body>
-</html>
+
+      <!-- jQuery, materialize js, easy pie chart -->
+      <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+      <script src="../bower_components/materialize/dist/js/materialize.min.js"></script>
+      <script src="../bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+      <script>
+      var mq = window.matchMedia( "(min-width: 500px)" );
+      var chartSize;
+      if (mq.matches) {
+        chartSize = 120;
+      } else {
+        chartSize = 90;
+      }
+      $(function() {
+        $('.chart').easyPieChart({
+          easing: 'easeOutBounce',
+          size: chartSize,
+          onStep: function(from, to, percent) {
+            $(this.el).find('.percent').text(Math.round(percent));
+          }
+        });
+        var chart = window.chart = $('.chart').data('easyPieChart');
+      });
+      </script>
+
+      <!-- Custom js -->
+      <script src="app.js"></script>
+    </body>
+    </html>

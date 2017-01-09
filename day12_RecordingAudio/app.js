@@ -75,8 +75,7 @@ $( document ).ready(function(){
             clipHeader.textContent = clipName;
           }
 
-          download.textContent = 'download';
-
+          // download.textContent = 'download';
 
           clipContainer.appendChild(audio);
           clipContainer.appendChild(download);
