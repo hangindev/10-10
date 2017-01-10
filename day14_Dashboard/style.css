@@ -20,8 +20,59 @@ body,
   min-height: calc(100vh - 112px);
 }
 
+.brand-logo {
+  font-weight: 300;
+}
+
+.brand-logo strong {
+  font-weight: 700;
+}
+
+#sidenav-overlay {
+  z-index: 1;
+}
+
 main {
   flex: 1;
+}
+
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.percent {
+  display: inline-block;
+  line-height: 90px;
+  z-index: 2;
+}
+.percent:after {
+  content: '%';
+  margin-left: 0.1em;
+  font-size: .8em;
+}
+@media only screen and (min-width: 500px) {
+  .chart {
+    width: 120px;
+    height: 120px;
+  }
+  .percent {
+    line-height: 120px;
+  }
+}
+
+#reading a {
+  color: #ffab40;
+  text-decoration: none;
 }
 
 audio {

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EasyPieChart by Jason Leung</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" entry="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="../bower_components/materialize/dist/css/materialize.min.css"  media="screen,projection"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+  <!-- HOME SECTION
+  ======================================================= -->
+  <div id="home" class="col s12">
+
+    <main class="container">
+      <div class="row">
+        <div class="col s12 l6 offset-l3">
+          <div id="score" class="card white">
+            <div class="card-content black-text">
+              <p class="card-title">Your Web Development Score</p>
+              <div class="chart" data-percent="86">
+                <span class="percent"></span>
+                <div class="label">HTML5</div>
+              </div>
+              <div class="chart" data-percent="90">
+                <span class="percent"></span>
+                <div class="label">CSS3</div>
+              </div>
+              <div class="chart" data-percent="80">
+                <span class="percent"></span>
+                <div class="label">JavaScript</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+
+  <!-- jQuery, materialize js, easy pie chart -->
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../bower_components/materialize/dist/js/materialize.min.js"></script>
+  <script src="../bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+  <script>
+  var mq = window.matchMedia( "(min-width: 500px)" );
+  var chartSize;
+  if (mq.matches) {
+    chartSize = 120;
+  } else {
+    chartSize = 90;
+  }
+  $(function() {
+    $('.chart').easyPieChart({
+      easing: 'easeOutBounce',
+      size: chartSize,
+      onStep: function(from, to, percent) {
+        $(this.el).find('.percent').text(Math.round(percent));
+      }
+    });
+    var chart = window.chart = $('.chart').data('easyPieChart');
+  });
+  </script>
+
+</body>
+</html>

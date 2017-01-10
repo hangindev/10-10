@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin-bottom: 0px;
+}
+
+.card {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 2px 1px -2px rgba(0,0,0,0.2);
+}
+
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.percent {
+  display: inline-block;
+  line-height: 90px;
+  z-index: 2;
+}
+.percent:after {
+  content: '%';
+  margin-left: 0.1em;
+  font-size: .8em;
+}
+@media only screen and (min-width: 500px) {
+  .chart {
+    width: 120px;
+    height: 120px;
+  }
+  .percent {
+    line-height: 120px;
+  }
+}
